@@ -11,7 +11,9 @@
                     @if (User.IsInRole("Administrators"))
                     {
                         <a class="esh-identity-item"
-                           asp-page="/Admin/Index">
+                           asp-area="Admin"
+                           asp-controller="Admin"
+                           asp-action="Dashboard">
                             <div class="esh-identity-name esh-identity-name--upper">Admin</div>
                         </a>
                     }
