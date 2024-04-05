@@ -191,7 +191,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 
-app.MapControllerRoute("default", "{controller:slugify=Home}/{action:slugify=Index}/{id?}");
+app.MapControllerRoute("default", "{area:exists}/{controller:slugify=Home}/{action:slugify=Index}/{id?}");
 app.MapRazorPages();
 app.MapHealthChecks("home_page_health_check", new HealthCheckOptions { Predicate = check => check.Tags.Contains("homePageHealthCheck") });
 app.MapHealthChecks("api_health_check", new HealthCheckOptions { Predicate = check => check.Tags.Contains("apiHealthCheck") });

@@ -20,6 +20,7 @@
     <PackageReference Include="Azure.Identity" />
     <PackageReference Include="MediatR" />
     <PackageReference Include="BuildBundlerMinifier" Condition="'$(Configuration)'=='Release'" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
@@ -36,6 +37,10 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\" />
     <Folder Include="wwwroot\fonts\" />
     <Folder Include="wwwroot\lib\" />
   </ItemGroup>
